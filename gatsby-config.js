@@ -5,5 +5,14 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  	plugins: [
+ 		{
+    	 resolve: `gatsby-plugin-s3`,
+    	 options: {
+    	     pathPrefix: `/gatsby.chicagotribune.com`,
+    	     bucketName: 'gatsby-test-nausheen2',
+    	     acl: null
+    	 },
+ 		},
+	]
 }
