@@ -7,7 +7,7 @@ Welcome to the team's first Gatsby repo! Here's how I suggest doing this: the be
 
 2. When you install and then run `gatsby --help`, you may get a `command not found`. These commands worked for me to fix this:
     
-    `npm config delete prefix` 
+    `npm config delete prefix`   
     `npm config set prefix /usr/local`  
     `npm i -g gatsby-cli`  
     `gatsby --version`  
