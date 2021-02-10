@@ -17,13 +17,13 @@ Welcome to the team's first Gatsby repo! Here's how I suggest doing this: the be
 3. Gatsby is built on React. You'll need a Babel plug-in to get the correct colors in Sublime (things will look weird otherwise). You can use these instructions to get that: https://stackoverflow.com/questions/41319547/syntax-highlighting-for-react-code-in-sublime
 
 4. Some key commands:
-    -- `gatsby new chicago-gatsby-repo <URL>` = this is equivalent to `tarbell serve` + `git init`. `gatsby new` is the basic command, `chicago-gatsby-repo` is your chosen name/slug of the project, and the `<URL>` would be a URL for a project you'd want to clone. Eventually, we can make a standard project on our github, with all necessary files, that the team can clone each time.  
+    -- `gatsby new chicago-gatsby-repo https://github.com/gatsbyjs/gatsby-starter-hello-world` = this is equivalent to `tarbell serve` + `git init`. `gatsby new` is the basic command, `chicago-gatsby-repo` is your chosen name/slug of the project, and the `<URL>` would be a URL for a project you'd want to clone. Eventually, we can make a standard project on our github, with all necessary files, that the team can clone each time.  
     -- `gatsby develop` = this is equivalent to `tarbell serve` once you're inside the repo directory and your site is served on `http://localhost:8000`.  
     -- `gatsby build` = this is equivalent to `npm run build` and outputs a `/public/` directory within which the file `index.html` has all of the code that your project has generated.  
 
 5. Some key directories and files:  
     -- `gatsby-config.js`: this is equivalent to `tarbell_config.py`. It is where you can call in plugins, credentials, and even data.  
-    -- `/pages/`: These are the front-facing pages of any Gatsby project. The `index.html` will be the landing page of your site or, in our case, where the main graphic lives. Any other page, like `about.js`, would live at something like `url.com/about.js`. One of the nice aspects of React is that you can assign each `.js` page its own CSS, eliminating the need for hyper-specific classes and IDs. In this repo, `about.js` has its own CSS file, which is `about.module.scss` (since we use SASS).  
+    -- `/src/pages/`: These are the front-facing pages of any Gatsby project. The `index.html` will be the landing page of your site or, in our case, where the main graphic lives. Any other page, like `about.js`, would live at something like `url.com/about.js`. One of the nice aspects of React is that you can assign each `.js` page its own CSS, eliminating the need for hyper-specific classes and IDs. In this repo, `about.js` has its own CSS file, which is `about.module.scss` (since we use SASS).  
     -- `/components/`: This is the cool thing about React. Components are what they sound like: if your graphic includes a header, some chatter, a chart, and a timeline, you can create components for each of those things (each with its own SASS file), and import them into the `index.html` where you'd like them to be. The great thing for us is that this allows us to standardize common things we build (like a bar chart) with set styles and placements.  
     -- `/styles/global.scss`: This holds global styles.  
     -- `index.html`: This is the main landing page of this project. For us, this will likely be the main graphic for a given project and will have all components imported into it.  
@@ -39,7 +39,7 @@ USEFUL LINKS
 -- Deployment: https://www.gatsbyjs.org/docs/deploying-to-s3-cloudfront/, http://lofi.fi/deploying-gatsbyjs-to-amazon-aws/  
 -- Different Sheets plugin: https://github.com/aendrew/gatsby-source-google-sheet  
 -- This helped with credentials: https://github.com/brandonmp/gatsby-source-google-sheets/blob/master/README.md  
--- These helped with Sheets+Gatsby: https://levelup.gitconnected.com/building-a-collaborative-calendar-with-google-and-gatsby-5989b283c937, https://jmolivas.weknowinc.com/how-use-google-spreadsheet-manage-content-and-trigger-deployment-your-gatsbyjs-site  
+-- These helped with Sheets+Gatsby: https://levelup.gitconnected.com/building-a-collaborative-calendar-with-google-and-gatsby-5989b283c937, https://jmolivas.com/how-use-google-spreadsheet-manage-content-and-trigger-deployment-your-gatsbyjs-site
 
 
 NEXT STEPS FOR NAUSHEEN
@@ -47,5 +47,5 @@ NEXT STEPS FOR NAUSHEEN
 
 -- How can we publish directly to P2P (and hence into Arc)? Is there replicatable code in Tarbell we could use?  
 -- How can we use `awscli` to push repos to AWS?  
--- How can we push this repo to Gitlab? https://www.gatsbyjs.org/docs/deploying-to-gitlab-pages/  
+-- How can we push this repo to Gitlab? https://www.gatsbyjs.org/docs/deploying-to-gitlab-pages/
 ^^^ Can we do all of those at once?  
